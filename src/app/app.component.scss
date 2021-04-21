@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+input,
+span,
+button {
+  font-family: "Montserrat", monospace;
+}
+
+.todo-list {
+  background-color: #f0f0f0;
+  width: 300px;
+  display: flex;
+  margin: 5px 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-container {
+  width: 300px;
+}
+.todo-input {
+  margin: 2px;
+  width: 88%;
+}
+
+.todo-add {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #113d80;
+  padding: 3px 6px;
+  margin-left: 4px;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.todo-delete {
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 10px;
+  background-color: #802211;
+  padding: 3px 6px;
+  &:hover {
+    opacity: 0.75;
+  }
+}

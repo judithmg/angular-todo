@@ -1,0 +1,19 @@
+<div class="input-container">
+  <input
+    type="text"
+    placeholder="Todo text..."
+    [formControl]="text"
+    class="todo-input"
+    [(ngModel)]="addTaskValue"
+  />
+  <button (click)="clickHandler(text.value)" class="todo-add">+</button>
+</div>
+
+<div *ngFor="let todo of todos" class="todo-list">
+  <span class="todo-item">
+    {{ todo.text }}
+  </span>
+  <button (click)="deleteButton(todo.id)" class="todo-delete">X</button>
+</div>
+
+<button (click)="deleteAll()" class="todo-delete">Clear all</button>
